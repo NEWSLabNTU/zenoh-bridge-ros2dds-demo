@@ -7,7 +7,7 @@
 本文目的是實現 ROS 節點之間的網域傳輸，最簡單的情況是一個 ROS 2 發送者
 和向一個接收者打招呼訊息。本文介紹一個將 ROS 訊息轉換稱 Zenoh 訊息後、
 穿透無線網路到對方再轉回 ROS 訊息的方法，做法上不會更動原有的 ROS 程式，
-因此網路的連接流程和下圖是相同的。
+因此網路的連接邏輯和一般 ROS 做法一樣。
 
 ```mermaid
 sequenceDiagram
@@ -60,7 +60,7 @@ sequenceDiagram
 
 下面有範例是在使用兩臺以外的第三方電腦，環境相同之外多安裝 zenohd。
 
-- zenoh-bridge-ros2dds 0.10.1-rc，參考官方 GitHub README 的 [Linux
+- zenohd 0.10.1-rc，參考官方 GitHub README 的 [Linux
   Debian](https://github.com/eclipse-zenoh/zenoh?tab=readme-ov-file#linux-debian)
   的兩行指令安裝即可，不用手工編譯。
 
