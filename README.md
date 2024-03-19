@@ -214,7 +214,7 @@ zenoh-bridge-ros2dds -n car1
 第二臺車綁定 car2 namespace。
 
 ```bash
-zenoh-bridge-ros2dds -n car1
+zenoh-bridge-ros2dds -n car2
 ```
 
 如此一來，car1 及 car2 的 topic 在 Zenoh 網路轉送時，分別被重新命名爲
